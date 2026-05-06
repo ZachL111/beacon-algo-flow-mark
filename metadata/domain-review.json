@@ -1,0 +1,73 @@
+{
+  "repo": "beacon-algo-flow-mark",
+  "language": "OCaml",
+  "category": "Algorithms",
+  "goal": "Package an OCaml local lab for flow analysis with seeded input scenarios, deterministic summary checks, and documented operating limits.",
+  "review_model": {
+    "terms": [
+      "input width",
+      "search depth",
+      "boundary pressure",
+      "complexity"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "input width",
+      "signal": 72,
+      "slack": 37,
+      "drag": 20,
+      "confidence": 56,
+      "score": 177,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "search depth",
+      "signal": 77,
+      "slack": 40,
+      "drag": 31,
+      "confidence": 72,
+      "score": 173,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "boundary pressure",
+      "signal": 81,
+      "slack": 49,
+      "drag": 27,
+      "confidence": 64,
+      "score": 194,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "complexity",
+      "signal": 68,
+      "slack": 32,
+      "drag": 25,
+      "confidence": 87,
+      "score": 180,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "input width",
+      "signal": 54,
+      "slack": 33,
+      "drag": 12,
+      "confidence": 80,
+      "score": 185,
+      "lane": "ship"
+    }
+  ]
+}

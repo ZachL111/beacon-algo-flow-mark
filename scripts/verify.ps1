@@ -59,3 +59,5 @@ foreach ($pathPattern in $knownPaths) {
 }
 
 ocaml tests/test.ml
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-beacon-algo-flow-detail.ps1
