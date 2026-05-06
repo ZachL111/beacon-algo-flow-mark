@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,67,86,19,11,7,111,review,algorithms baseline scenario exercises the review path for bounded failure handling
+pressure,76,76,28,23,8,22,review,algorithms pressure scenario exercises the review path for bounded failure handling
+surge,99,95,18,17,11,159,review,algorithms surge scenario exercises the review path for bounded failure handling
+degraded,64,59,34,28,5,-73,review,algorithms degraded scenario exercises the review path for bounded failure handling
+recovery,87,105,22,13,11,157,review,algorithms recovery scenario exercises the review path for bounded failure handling
+boundary,75,78,21,19,8,67,review,algorithms boundary scenario exercises the review path for bounded failure handling
